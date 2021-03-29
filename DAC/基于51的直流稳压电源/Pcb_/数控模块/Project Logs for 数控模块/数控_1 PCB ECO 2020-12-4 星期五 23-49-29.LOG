@@ -1,0 +1,17 @@
+Added Component: Designator=P17(Header_4)
+Add component (AddParameter): Name = "Comm"; Value = "²åÕë4"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetP17_1 Pin=P17-1
+Added Pin To Net: NetName=NetP17_1 Pin=U1-4
+Added Net: Name=NetP17_1
+Added Pin To Net: NetName=NetP17_2 Pin=P17-2
+Added Pin To Net: NetName=NetP17_2 Pin=U1-3
+Added Net: Name=NetP17_2
+Added Pin To Net: NetName=NetP17_3 Pin=P17-3
+Added Pin To Net: NetName=NetP17_3 Pin=U1-2
+Added Net: Name=NetP17_3
+Added Pin To Net: NetName=NetP17_4 Pin=P17-4
+Added Pin To Net: NetName=NetP17_4 Pin=U1-1
+Added Net: Name=NetP17_4
+Added Member To Class: ClassName=Êý¿Ø Member=Component L1 LM317_Adj
+Added Member To Class: ClassName=Êý¿Ø Member=Component P17 Header_4
+Added Room: Name=Êý¿Ø

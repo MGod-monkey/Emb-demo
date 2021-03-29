@@ -1,0 +1,187 @@
+C51 COMPILER V9.60.0.0   MAIN                                                              12/18/2020 17:14:37 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\Objects\main.obj
+COMPILER INVOKED BY: E:\keil5_ARM\C51\BIN\C51.EXE main.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\ma
+                    -in.lst) TABS(2) OBJECT(.\Objects\main.obj)
+
+line level    source
+
+   1          #include "reg52.h"
+   2          
+   3          typedef unsigned int u16;   
+   4          typedef unsigned char u8;
+   5          
+   6          
+   7          //接口定义
+   8          #define SMG_DATA P0 //数码管数据接口
+   9          #define DAC_DATA P1 //dac数据接口
+  10          sbit LSA=P2^6;
+  11          sbit LSB=P2^5;
+  12          sbit LSC=P2^4;
+  13          sbit K1=P2^0; //加键
+  14          sbit K2=P2^1; //减键
+  15          sbit K3=P2^2; //归零键
+  16          sbit K4=P2^3; //息屏键
+  17          sbit beep=P2^7; //蜂鸣器
+  18          u8 code smg[11]={0xd7,0x14,0xcd,0x5d,0x1e,0x5b,0xdb,0x15,0xdf,0x5f};  //阴极数码管段码
+  19          //u8 code smg[17]={0x3f,0x06,0x5b,0x4f,0x66,0x6d,0x7d,0x07,
+  20                    //0x7f,0x6f,0x77,0x7c,0x39,0x5e,0x79,0x71};//显示0~F的值
+  21          
+  22          //全局变量定义
+  23          u8 w; //位选值
+  24          u8 is_display=1;  //是否开启屏显，默认开启
+  25          u8 now_v=0,STEP=5;  //当前的电压值=now_v/10+20,步进位5
+  26          u8 delay_time=150;  //按键识别为长按间隔时间:1.5s
+  27          u8 count1,count2,start=0,count_v=0;   //定时器变量
+  28          
+  29          
+  30          //延时函数
+  31          void delay_ms(u16 xms)
+  32          {
+  33   1        u16 x,y;
+  34   1        for(x=xms;x>0;x--)
+  35   1          for(y=110;y>0;y--);
+  36   1      }
+  37          //阴极数码管显示事件
+  38          void Display(){
+  39   1        if(is_display==1){
+  40   2        for(w=0;w<3;w++)
+  41   2        {
+  42   3          switch(w)
+  43   3          {
+  44   4            case(0):LSC=1;LSA=0;SMG_DATA=smg[(now_v+20)/100];delay_ms(5);SMG_DATA=0x00;break;     //十位数
+  45   4            case(1):LSA=1;LSB=0;SMG_DATA=smg[(now_v+20)%100/10]^0x80;delay_ms(5);SMG_DATA=0x00;break; //个位数�
+             -�第三位显示小数点
+  46   4            case(2):LSB=1;LSC=0;SMG_DATA=smg[(now_v+20)%10];delay_ms(5);SMG_DATA=0x00;break;      //十分位
+  47   4          }
+  48   3        }
+  49   2        }
+  50   1        else{   //关闭显示功能
+  51   2        LSA=LSB=LSC=0;
+  52   2        SMG_DATA=0x00;
+  53   2        }
+C51 COMPILER V9.60.0.0   MAIN                                                              12/18/2020 17:14:37 PAGE 2   
+
+  54   1      }
+  55          //键盘扫描事件
+  56          void KeyScan(){
+  57   1        if(K1!=1||K2!=1||K3!=1|K4!=1){
+  58   2          delay_ms(100);//消抖
+  59   2          if(K1==0){  //加键被按下
+  60   3            count1=count2=0;
+  61   3            if(now_v<160){
+  62   4              now_v+=STEP;
+  63   4              DAC_DATA=now_v;
+  64   4              while(!K1){ //等待按键松开
+  65   5                Display();
+  66   5                if(start&&count_v>0&&now_v<160){
+  67   6                now_v+=count_v;
+  68   6                count_v=0;
+  69   6                }
+  70   5                DAC_DATA=now_v;
+  71   5              }
+  72   4          }
+  73   3            else{
+  74   4            DAC_DATA=now_v=160;
+  75   4            beep=1;
+  76   4            while(!K1){ //等待按键松开
+  77   5            Display();}
+  78   4            }
+  79   3            start=0;  //将长按功能关闭
+  80   3            beep=0;
+  81   3        }
+  82   2          //电压减
+  83   2            if(K2==0){
+  84   3              count1=count2=0;
+  85   3              if(now_v>0){  //now_v值不为0
+  86   4              now_v-=STEP;
+  87   4              DAC_DATA=now_v;
+  88   4              while(!K2){ //等待按键松开
+  89   5                Display();
+  90   5              if(start&&count_v>0&&now_v>0){
+  91   6                now_v-=count_v;
+  92   6                count_v=0;
+  93   6                }
+  94   5                DAC_DATA=now_v;
+  95   5              }
+  96   4            }
+  97   3              else{
+  98   4                DAC_DATA=now_v=0;
+  99   4                beep=1;   //蜂鸣器开始警告
+ 100   4                while(!K2){ //等待按键松开
+ 101   5                Display();}
+ 102   4              }
+ 103   3              start=0;  //将长按功能关闭
+ 104   3              beep=0;
+ 105   3            }
+ 106   2          //清零
+ 107   2          if(K3==0){
+ 108   3          while(now_v>=10){
+ 109   4            now_v-=10;
+ 110   4            DAC_DATA=now_v;
+ 111   4            delay_ms(20);
+ 112   4            Display();
+ 113   4          }
+ 114   3          DAC_DATA=now_v=0;
+ 115   3          Display();
+C51 COMPILER V9.60.0.0   MAIN                                                              12/18/2020 17:14:37 PAGE 3   
+
+ 116   3          while(!K3){   //等待按键松开
+ 117   4            Display();
+ 118   4          }
+ 119   3        }
+ 120   2          //息屏或启屏
+ 121   2          if(K4==0){
+ 122   3          is_display=~is_display;
+ 123   3          while(!K4);}
+ 124   2        }
+ 125   1      }
+ 126          //初始化定时器0
+ 127          void InitTimer0(void)
+ 128          {
+ 129   1          TMOD=0x01;//1.模式设置，00000001，采用的是定时器0，工作与式1（M1=0，M0=1）。
+ 130   1          TH0=(65536-10000)/256;  //2.定时器设置，每隔10毫秒发起一次中断。
+ 131   1          TL0=(65536-10000)%256;
+ 132   1          ET0=1;                  //3.开定时器0中断
+ 133   1          EA = 1;                 //4.开总中断
+ 134   1          TR0=1;                  //5.打开定时器
+ 135   1      }
+ 136          void main()
+ 137          { 
+ 138   1        InitTimer0();
+ 139   1        beep=0;
+ 140   1        while(1)
+ 141   1        { 
+ 142   2          Display();
+ 143   2          KeyScan();
+ 144   2      }
+ 145   1        }
+ 146          
+ 147          void Timer0Interrupt(void) interrupt 1
+ 148          {
+ 149   1          TH0=(65536-10000)/256;  //2.定时器设置，每隔10毫秒发起一次中断。
+ 150   1          TL0=(65536-10000)%256;
+ 151   1        count1++; //10ms加一数
+ 152   1        if(count1>=delay_time){
+ 153   2          count1=0; //清零，防止内存溢出
+ 154   2          start=1;  //长按1.5s以上，按键为长按状态，开始隔0.5s累加1
+ 155   2        }
+ 156   1        if(start) count2++;
+ 157   1        if(count2>=50){count2=0;count_v=STEP;}
+ 158   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    551    ----
+   CONSTANT SIZE    =     11    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      9    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

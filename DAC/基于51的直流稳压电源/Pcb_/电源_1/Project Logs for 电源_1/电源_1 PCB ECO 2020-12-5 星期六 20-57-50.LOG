@@ -1,0 +1,5 @@
+Change Component Comment : Designator=R7 Old Comment=100 New Comment=2k
+Change Component Comment : Designator=RP2 Old Comment=200 New Comment=1k
+Added Member To Class: ClassName=电源 Member=Component P2 电源端子2P
+Added Member To Class: ClassName=电源 Member=Component P4 电源端子2P
+Added Room: Name=电源

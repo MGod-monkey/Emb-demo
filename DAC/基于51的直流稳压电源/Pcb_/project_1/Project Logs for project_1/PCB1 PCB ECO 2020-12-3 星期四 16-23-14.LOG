@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=NetC4_2 Pin=L1-3
+Removed Pin From Net: NetName=NetC4_2 Pin=L1-5
+Change Component Designator: OldDesignator=* NewDesignator=H1
+Added Pin To Net: NetName=GND Pin=L1-3
+Added Pin To Net: NetName=NetC4_2 Pin=L1-3
+Added Pin To Net: NetName=+12v Pin=L1-4
+Added Pin To Net: NetName=GND Pin=L1-5
+Added Pin To Net: NetName=NetC4_2 Pin=L1-5
+Change Net Name : Old Net Name=Net*_1 New Net Name=NetH1_1
+Added Member To Class: ClassName=Sheet1 Member=Component L1 LM2596
+Added Room: Name=Sheet1

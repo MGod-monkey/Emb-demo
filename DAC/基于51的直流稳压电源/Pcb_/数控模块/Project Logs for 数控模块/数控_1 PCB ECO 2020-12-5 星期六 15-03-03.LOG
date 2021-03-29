@@ -1,0 +1,6 @@
+Change Component Footprint: Designator=P1 Old Footprint=电源端子2P New Footprint=端子 - duplicate
+Change Component Footprint: Designator=P2 Old Footprint=电源端子2P New Footprint=端子 - duplicate
+Change Component Footprint: Designator=P3 Old Footprint=电源端子2P New Footprint=端子 - duplicate
+Change Component Footprint: Designator=P4 Old Footprint=电源端子2P New Footprint=端子 - duplicate
+Added Member To Class: ClassName=数控 Member=Component L1 LM317_Adj
+Added Room: Name=数控

@@ -1,0 +1,44 @@
+Removed Pin From Net: NetName=GND Pin=U2-1
+Removed Pin From Net: NetName=NetR8_15 Pin=U2-2
+Removed Pin From Net: NetName=NetR8_13 Pin=U2-3
+Removed Pin From Net: NetName=NetR8_11 Pin=U2-4
+Removed Pin From Net: NetName=NetR8_9 Pin=U2-5
+Removed Pin From Net: NetName=NetR8_7 Pin=U2-6
+Removed Pin From Net: NetName=NetR8_5 Pin=U2-7
+Removed Pin From Net: NetName=NetR8_3 Pin=U2-8
+Removed Pin From Net: NetName=NetR8_1 Pin=U2-9
+Removed Pin From Net: NetName=B7 Pin=U2-11
+Removed Pin From Net: NetName=B6 Pin=U2-12
+Removed Pin From Net: NetName=B5 Pin=U2-13
+Removed Pin From Net: NetName=B4 Pin=U2-14
+Removed Pin From Net: NetName=B3 Pin=U2-15
+Removed Pin From Net: NetName=B2 Pin=U2-16
+Removed Pin From Net: NetName=B1 Pin=U2-17
+Removed Pin From Net: NetName=B0 Pin=U2-18
+Added Pin To Net: NetName=5v Pin=U2-1
+Added Pin To Net: NetName=B0 Pin=U2-2
+Added Pin To Net: NetName=B1 Pin=U2-3
+Added Pin To Net: NetName=B2 Pin=U2-4
+Added Pin To Net: NetName=B3 Pin=U2-5
+Added Pin To Net: NetName=B4 Pin=U2-6
+Added Pin To Net: NetName=B5 Pin=U2-7
+Added Pin To Net: NetName=B6 Pin=U2-8
+Added Pin To Net: NetName=B7 Pin=U2-9
+Added Pin To Net: NetName=NetR8_15 Pin=U2-11
+Added Pin To Net: NetName=NetR8_13 Pin=U2-12
+Added Pin To Net: NetName=NetR8_11 Pin=U2-13
+Added Pin To Net: NetName=NetR8_9 Pin=U2-14
+Added Pin To Net: NetName=NetR8_7 Pin=U2-15
+Added Pin To Net: NetName=NetR8_5 Pin=U2-16
+Added Pin To Net: NetName=NetR8_3 Pin=U2-17
+Added Pin To Net: NetName=NetR8_1 Pin=U2-18
+Change Net Name : Old Net Name=B0 New Net Name=A0
+Change Net Name : Old Net Name=B1 New Net Name=A1
+Change Net Name : Old Net Name=B2 New Net Name=A2
+Change Net Name : Old Net Name=B3 New Net Name=A3
+Change Net Name : Old Net Name=B4 New Net Name=A4
+Change Net Name : Old Net Name=B5 New Net Name=A5
+Change Net Name : Old Net Name=B6 New Net Name=A6
+Change Net Name : Old Net Name=B7 New Net Name=A7
+Added Member To Class: ClassName=Êý¿Ø Member=Component L1 LM317_Adj
+Added Room: Name=Êý¿Ø

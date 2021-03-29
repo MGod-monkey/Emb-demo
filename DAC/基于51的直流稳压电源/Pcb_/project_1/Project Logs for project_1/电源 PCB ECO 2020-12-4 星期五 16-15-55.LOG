@@ -1,0 +1,22 @@
+Removed Pin From Net: NetName=+12v Pin=P30-1
+Removed Pin From Net: NetName=GND Pin=P30-2
+Removed Pin From Net: NetName=+5v Pin=P40-1
+Removed Pin From Net: NetName=+5.12v Pin=P40-2
+Removed Member From Class: ClassName=电源 Member=P30
+Removed Member From Class: ClassName=电源 Member=P40
+Added Component: Designator=P1(电源端子2P)
+Add component (AddParameter): Name = ""; Value = "电源端子2P"; VariantName = "[No Variations]"
+Added Component: Designator=P2(电源端子2P)
+Add component (AddParameter): Name = ""; Value = "电源端子2P"; VariantName = "[No Variations]"
+Added Component: Designator=P3(电源端子2P)
+Add component (AddParameter): Name = ""; Value = "电源端子2P"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+24v Pin=P1-1
+Added Pin To Net: NetName=GND Pin=P1-2
+Added Pin To Net: NetName=+5.12v Pin=P2-1
+Added Pin To Net: NetName=+12v Pin=P2-2
+Added Pin To Net: NetName=GND Pin=P3-1
+Added Pin To Net: NetName=+5v Pin=P3-2
+Added Member To Class: ClassName=电源 Member=Component P1 电源端子2P
+Added Member To Class: ClassName=电源 Member=Component P2 电源端子2P
+Added Member To Class: ClassName=电源 Member=Component P3 电源端子2P
+Added Room: Name=电源

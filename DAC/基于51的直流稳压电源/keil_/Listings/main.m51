@@ -1,0 +1,282 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    12/18/2020  17:14:37  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+E:\KEIL5_ARM\C51\BIN\BL51.EXE .\Objects\main.obj TO .\Objects\main PRINT (.\Listings\main.m51) RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\main.obj (MAIN)
+  E:\KEIL5_ARM\C51\LIB\C51S.LIB (?C_STARTUP)
+  E:\KEIL5_ARM\C51\LIB\C51S.LIB (?C?UIDIV)
+  E:\KEIL5_ARM\C51\LIB\C51S.LIB (?C?SIDIV)
+  E:\KEIL5_ARM\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  .\Objects\main (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0009H     UNIT         ?DT?MAIN
+            IDATA   0011H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     0008H                  *** GAP ***
+            CODE    000BH     0003H     ABSOLUTE     
+                    000EH     07F2H                  *** GAP ***
+            CODE    0800H     011BH     UNIT         ?PR?KEYSCAN?MAIN
+            CODE    091BH     009CH     UNIT         ?PR?DISPLAY?MAIN
+            CODE    09B7H     008CH     UNIT         ?C_C51STARTUP
+            CODE    0A43H     008BH     UNIT         ?C?LIB_CODE
+            CODE    0ACEH     0035H     UNIT         ?PR?TIMER0INTERRUPT?MAIN
+            CODE    0B03H     001EH     UNIT         ?PR?_DELAY_MS?MAIN
+            CODE    0B21H     0013H     UNIT         ?C_INITSEG
+            CODE    0B34H     0010H     UNIT         ?PR?INITTIMER0?MAIN
+            CODE    0B44H     000DH     UNIT         ?PR?MAIN?MAIN
+            CODE    0B51H     000BH     UNIT         ?CO?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\main (MAIN)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?MAIN
+  +--> ?C_INITSEG
+
+?PR?MAIN?MAIN
+  +--> ?PR?INITTIMER0?MAIN
+  +--> ?PR?DISPLAY?MAIN
+  +--> ?PR?KEYSCAN?MAIN
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  12/18/2020  17:14:37  PAGE 2
+
+
+
+?PR?DISPLAY?MAIN
+  +--> ?CO?MAIN
+  +--> ?PR?_DELAY_MS?MAIN
+
+?PR?KEYSCAN?MAIN
+  +--> ?PR?_DELAY_MS?MAIN
+  +--> ?PR?DISPLAY?MAIN
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\main (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  B:00A0H.3       PUBLIC        K4
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:0008H         PUBLIC        count_v
+  D:00B0H         PUBLIC        P3
+  B:00A8H.7       PUBLIC        EA
+  C:0ACEH         PUBLIC        Timer0Interrupt
+  D:00A8H         PUBLIC        IE
+  D:00B8H         PUBLIC        IP
+  B:00A0H.7       PUBLIC        beep
+  D:0009H         PUBLIC        delay_time
+  C:0B44H         PUBLIC        main
+  D:000AH         PUBLIC        now_v
+  D:000BH         PUBLIC        start
+  C:0800H         PUBLIC        KeyScan
+  D:0098H         PUBLIC        SCON
+  D:0089H         PUBLIC        TMOD
+  D:0088H         PUBLIC        TCON
+  D:000CH         PUBLIC        is_display
+  D:000DH         PUBLIC        STEP
+  C:0B51H         PUBLIC        smg
+  B:00A8H.1       PUBLIC        ET0
+  C:0B34H         PUBLIC        InitTimer0
+  D:008CH         PUBLIC        TH0
+  D:008AH         PUBLIC        TL0
+  C:0B03H         PUBLIC        _delay_ms
+  B:0088H.4       PUBLIC        TR0
+  C:091BH         PUBLIC        Display
+  D:000EH         PUBLIC        count1
+  D:000FH         PUBLIC        count2
+  B:00A0H.6       PUBLIC        LSA
+  B:00A0H.5       PUBLIC        LSB
+  B:00A0H.4       PUBLIC        LSC
+  D:00C8H         PUBLIC        T2CON
+  D:0010H         PUBLIC        w
+  D:00D0H         PUBLIC        PSW
+  B:00A0H.0       PUBLIC        K1
+  B:00A0H.1       PUBLIC        K2
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  12/18/2020  17:14:37  PAGE 3
+
+
+  B:00A0H.2       PUBLIC        K3
+  -------         PROC          _DELAY_MS
+  D:0006H         SYMBOL        xms
+  -------         DO            
+  D:0006H         SYMBOL        x
+  D:0004H         SYMBOL        y
+  -------         ENDDO         
+  C:0B03H         LINE#         31
+  C:0B03H         LINE#         32
+  C:0B03H         LINE#         34
+  C:0B0CH         LINE#         35
+  C:0B20H         LINE#         36
+  -------         ENDPROC       _DELAY_MS
+  -------         PROC          DISPLAY
+  C:091BH         LINE#         38
+  C:091BH         LINE#         39
+  C:0924H         LINE#         40
+  C:0934H         LINE#         41
+  C:0934H         LINE#         42
+  C:0940H         LINE#         43
+  C:0940H         LINE#         44
+  C:095DH         LINE#         45
+  C:097DH         LINE#         46
+  C:09A8H         LINE#         47
+  C:09A8H         LINE#         48
+  C:09ADH         LINE#         49
+  C:09ADH         LINE#         50
+  C:09ADH         LINE#         51
+  C:09B3H         LINE#         52
+  C:09B6H         LINE#         53
+  C:09B6H         LINE#         54
+  -------         ENDPROC       DISPLAY
+  -------         PROC          KEYSCAN
+  C:0800H         LINE#         56
+  C:0800H         LINE#         57
+  C:081FH         LINE#         58
+  C:0826H         LINE#         59
+  C:0829H         LINE#         60
+  C:082EH         LINE#         61
+  C:0839H         LINE#         62
+  C:083FH         LINE#         63
+  C:0841H         LINE#         64
+  C:0844H         LINE#         65
+  C:0847H         LINE#         66
+  C:0860H         LINE#         67
+  C:0866H         LINE#         68
+  C:0869H         LINE#         69
+  C:0869H         LINE#         70
+  C:086CH         LINE#         71
+  C:086EH         LINE#         72
+  C:086EH         LINE#         73
+  C:086EH         LINE#         74
+  C:0874H         LINE#         75
+  C:0876H         LINE#         76
+  C:0879H         LINE#         77
+  C:087EH         LINE#         78
+  C:087EH         LINE#         79
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  12/18/2020  17:14:37  PAGE 4
+
+
+  C:0881H         LINE#         80
+  C:0883H         LINE#         81
+  C:0883H         LINE#         83
+  C:0886H         LINE#         84
+  C:088BH         LINE#         85
+  C:0896H         LINE#         86
+  C:089CH         LINE#         87
+  C:089EH         LINE#         88
+  C:08A1H         LINE#         89
+  C:08A4H         LINE#         90
+  C:08BEH         LINE#         91
+  C:08C4H         LINE#         92
+  C:08C7H         LINE#         93
+  C:08C7H         LINE#         94
+  C:08CAH         LINE#         95
+  C:08CCH         LINE#         96
+  C:08CCH         LINE#         97
+  C:08CCH         LINE#         98
+  C:08D1H         LINE#         99
+  C:08D3H         LINE#         100
+  C:08D6H         LINE#         101
+  C:08DBH         LINE#         102
+  C:08DBH         LINE#         103
+  C:08DEH         LINE#         104
+  C:08E0H         LINE#         105
+  C:08E0H         LINE#         107
+  C:08E3H         LINE#         108
+  C:08EEH         LINE#         109
+  C:08F4H         LINE#         110
+  C:08F6H         LINE#         111
+  C:08FDH         LINE#         112
+  C:0900H         LINE#         113
+  C:0902H         LINE#         114
+  C:0907H         LINE#         115
+  C:0909H         LINE#         116
+  C:090CH         LINE#         117
+  C:090FH         LINE#         118
+  C:0911H         LINE#         119
+  C:0911H         LINE#         121
+  C:0914H         LINE#         122
+  C:0917H         LINE#         123
+  C:091AH         LINE#         124
+  C:091AH         LINE#         125
+  -------         ENDPROC       KEYSCAN
+  -------         PROC          INITTIMER0
+  C:0B34H         LINE#         127
+  C:0B34H         LINE#         128
+  C:0B34H         LINE#         129
+  C:0B37H         LINE#         130
+  C:0B3AH         LINE#         131
+  C:0B3DH         LINE#         132
+  C:0B3FH         LINE#         133
+  C:0B41H         LINE#         134
+  C:0B43H         LINE#         135
+  -------         ENDPROC       INITTIMER0
+  -------         PROC          MAIN
+  C:0B44H         LINE#         136
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  12/18/2020  17:14:37  PAGE 5
+
+
+  C:0B44H         LINE#         137
+  C:0B44H         LINE#         138
+  C:0B47H         LINE#         139
+  C:0B49H         LINE#         140
+  C:0B49H         LINE#         141
+  C:0B49H         LINE#         142
+  C:0B4CH         LINE#         143
+  C:0B4FH         LINE#         144
+  -------         ENDPROC       MAIN
+  -------         PROC          TIMER0INTERRUPT
+  C:0ACEH         LINE#         147
+  C:0AD2H         LINE#         149
+  C:0AD5H         LINE#         150
+  C:0AD8H         LINE#         151
+  C:0ADAH         LINE#         152
+  C:0AE1H         LINE#         153
+  C:0AE4H         LINE#         154
+  C:0AE7H         LINE#         155
+  C:0AE7H         LINE#         156
+  C:0AEDH         LINE#         157
+  C:0AFEH         LINE#         158
+  -------         ENDPROC       TIMER0INTERRUPT
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        ?C?UIDIV
+  C:0A43H         PUBLIC        ?C?UIDIV
+  -------         ENDMOD        ?C?UIDIV
+
+  -------         MODULE        ?C?SIDIV
+  C:0A98H         PUBLIC        ?C?SIDIV
+  -------         ENDMOD        ?C?SIDIV
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0247H BYTE (28%) *
+******************************************************************************
+
+Program Size: data=18.0 xdata=0 code=866
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

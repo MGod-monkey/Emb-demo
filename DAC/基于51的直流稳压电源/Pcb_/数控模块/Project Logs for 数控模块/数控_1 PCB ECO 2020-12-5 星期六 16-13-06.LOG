@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=LED Pin=U1-10
+Added Pin To Net: NetName=LED Pin=U1-17
+Added Member To Class: ClassName=Êý¿Ø Member=Component L1 LM317_Adj
+Added Room: Name=Êý¿Ø

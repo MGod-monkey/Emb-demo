@@ -1,0 +1,671 @@
+Added Component: Designator=C1(电容_瓷片)
+Added Component: Designator=C2(电容_瓷片)
+Added Component: Designator=C3(电解电容_小)
+Added Component: Designator=C4(电解电容_大)
+Added Component: Designator=C5(电解电容_大)
+Added Component: Designator=C6(电容_瓷片)
+Added Component: Designator=C7(电容_瓷片)
+Added Component: Designator=C8(电容_瓷片)
+Added Component: Designator=C9(电容_瓷片)
+Added Component: Designator=D1(LED_G)
+Add component (AddParameter): Name = "Component Link1Description"; Value = "元件数据连接1，一般是生产厂商的元件描述连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 1URL"; Value = "元件厂商的网站连接1，通常是主页地址，如http://www.st.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 2URL"; Value = "元件厂商的网站连接2，通常是元件数据说明文件地址，如http://www.fairchildsemi.com/ds/2N%2F2N3904.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2  Description"; Value = "元件数据连接2，一般是生产厂商的元件数据库连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created"; Value = "制造厂商"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kind"; Value = "General"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Date"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Note"; Value = "最近的应用笔记修订本"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Object"; Value = "Diode"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "DIODE0.4及DIODE0.7"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Spice Prefix"; Value = "D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubKind"; Value = "Diode"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Diode"; VariantName = "[No Variations]"
+Added Component: Designator=D2(LED_G)
+Add component (AddParameter): Name = "Component Link1Description"; Value = "元件数据连接1，一般是生产厂商的元件描述连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 1URL"; Value = "元件厂商的网站连接1，通常是主页地址，如http://www.st.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 2URL"; Value = "元件厂商的网站连接2，通常是元件数据说明文件地址，如http://www.fairchildsemi.com/ds/2N%2F2N3904.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2  Description"; Value = "元件数据连接2，一般是生产厂商的元件数据库连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created"; Value = "制造厂商"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kind"; Value = "General"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Date"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Note"; Value = "最近的应用笔记修订本"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Object"; Value = "Diode"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "DIODE0.4及DIODE0.7"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Spice Prefix"; Value = "D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubKind"; Value = "Diode"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Diode"; VariantName = "[No Variations]"
+Added Component: Designator=D3(二极管_整流)
+Added Component: Designator=H1(滑动开关)
+Added Component: Designator=key1(AN66)
+Added Component: Designator=key2(AN66)
+Added Component: Designator=key3(AN66)
+Added Component: Designator=key4(AN66)
+Added Component: Designator=L1(DIP8)
+Added Component: Designator=L2(AL0410_V)
+Add component (AddParameter): Name = "Component Link1Description"; Value = "元件数据连接1，一般是生产厂商的元件描述连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 1URL"; Value = "元件厂商的网站连接1，通常是主页地址，如http://www.st.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 2URL"; Value = "元件厂商的网站连接2，通常是元件数据说明文件地址，如http://www.fairchildsemi.com/ds/2N%2F2N3904.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2  Description"; Value = "元件数据连接2，一般是生产厂商的元件数据库连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created"; Value = "制造厂商"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kind"; Value = "General"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Date"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Note"; Value = "最近的应用笔记修订本"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Object"; Value = "Inductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "封装描述"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "425"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Spice Prefix"; Value = "L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubKind"; Value = "Inductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=L3(7805散热器)
+Added Component: Designator=L4(7805散热器)
+Added Component: Designator=P1(电源端子2P)
+Add component (AddParameter): Name = ""; Value = "电源端子2P"; VariantName = "[No Variations]"
+Added Component: Designator=P2(电源端子2P)
+Add component (AddParameter): Name = ""; Value = "电源端子2P"; VariantName = "[No Variations]"
+Added Component: Designator=R1(1/4WA1)
+Add component (AddParameter): Name = "Component Link1Description"; Value = "元件数据连接1，一般是生产厂商的元件描述连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 1URL"; Value = "元件厂商的网站连接1，通常是主页地址，如http://www.st.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 2URL"; Value = "元件厂商的网站连接2，通常是元件数据说明文件地址，如http://www.fairchildsemi.com/ds/2N%2F2N3904.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2  Description"; Value = "元件数据连接2，一般是生产厂商的元件数据库连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created"; Value = "制造厂商"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kind"; Value = "General"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Date"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Note"; Value = "最近的应用笔记修订本"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Object"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "AXIAL0.3-AXIA1.0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "AXIAL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Spice Prefix"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubKind"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=R2(1/4WA1)
+Add component (AddParameter): Name = "Component Link1Description"; Value = "元件数据连接1，一般是生产厂商的元件描述连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 1URL"; Value = "元件厂商的网站连接1，通常是主页地址，如http://www.st.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 2URL"; Value = "元件厂商的网站连接2，通常是元件数据说明文件地址，如http://www.fairchildsemi.com/ds/2N%2F2N3904.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2  Description"; Value = "元件数据连接2，一般是生产厂商的元件数据库连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created"; Value = "制造厂商"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kind"; Value = "General"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Date"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Note"; Value = "最近的应用笔记修订本"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Object"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "AXIAL0.3-AXIA1.0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "AXIAL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Spice Prefix"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubKind"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=R3(1/4WA1)
+Add component (AddParameter): Name = "Component Link1Description"; Value = "元件数据连接1，一般是生产厂商的元件描述连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 1URL"; Value = "元件厂商的网站连接1，通常是主页地址，如http://www.st.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 2URL"; Value = "元件厂商的网站连接2，通常是元件数据说明文件地址，如http://www.fairchildsemi.com/ds/2N%2F2N3904.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2  Description"; Value = "元件数据连接2，一般是生产厂商的元件数据库连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created"; Value = "制造厂商"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kind"; Value = "General"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Date"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Note"; Value = "最近的应用笔记修订本"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Object"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "AXIAL0.3-AXIA1.0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "AXIAL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Spice Prefix"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubKind"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=R4(1/4WA1)
+Add component (AddParameter): Name = "Component Link1Description"; Value = "元件数据连接1，一般是生产厂商的元件描述连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 1URL"; Value = "元件厂商的网站连接1，通常是主页地址，如http://www.st.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 2URL"; Value = "元件厂商的网站连接2，通常是元件数据说明文件地址，如http://www.fairchildsemi.com/ds/2N%2F2N3904.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2  Description"; Value = "元件数据连接2，一般是生产厂商的元件数据库连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created"; Value = "制造厂商"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kind"; Value = "General"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Date"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Note"; Value = "最近的应用笔记修订本"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Object"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "AXIAL0.3-AXIA1.0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "AXIAL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Spice Prefix"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubKind"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=R5(1/4WA1)
+Add component (AddParameter): Name = "Component Link1Description"; Value = "元件数据连接1，一般是生产厂商的元件描述连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 1URL"; Value = "元件厂商的网站连接1，通常是主页地址，如http://www.st.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 2URL"; Value = "元件厂商的网站连接2，通常是元件数据说明文件地址，如http://www.fairchildsemi.com/ds/2N%2F2N3904.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2  Description"; Value = "元件数据连接2，一般是生产厂商的元件数据库连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created"; Value = "制造厂商"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kind"; Value = "General"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Date"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Note"; Value = "最近的应用笔记修订本"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Object"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "AXIAL0.3-AXIA1.0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "AXIAL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Spice Prefix"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubKind"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=R6(1/4WA1)
+Add component (AddParameter): Name = "Component Link1Description"; Value = "元件数据连接1，一般是生产厂商的元件描述连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 1URL"; Value = "元件厂商的网站连接1，通常是主页地址，如http://www.st.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 2URL"; Value = "元件厂商的网站连接2，通常是元件数据说明文件地址，如http://www.fairchildsemi.com/ds/2N%2F2N3904.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2  Description"; Value = "元件数据连接2，一般是生产厂商的元件数据库连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created"; Value = "制造厂商"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kind"; Value = "General"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Date"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Note"; Value = "最近的应用笔记修订本"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Object"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "AXIAL0.3-AXIA1.0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "AXIAL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Spice Prefix"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubKind"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=R7(1/4WA1)
+Add component (AddParameter): Name = "Component Link1Description"; Value = "元件数据连接1，一般是生产厂商的元件描述连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 1URL"; Value = "元件厂商的网站连接1，通常是主页地址，如http://www.st.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 2URL"; Value = "元件厂商的网站连接2，通常是元件数据说明文件地址，如http://www.fairchildsemi.com/ds/2N%2F2N3904.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2  Description"; Value = "元件数据连接2，一般是生产厂商的元件数据库连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created"; Value = "制造厂商"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kind"; Value = "General"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Date"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Note"; Value = "最近的应用笔记修订本"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Object"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "AXIAL0.3-AXIA1.0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "AXIAL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Spice Prefix"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubKind"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=R8(1/4WA1)
+Add component (AddParameter): Name = "Component Link1Description"; Value = "元件数据连接1，一般是生产厂商的元件描述连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 1URL"; Value = "元件厂商的网站连接1，通常是主页地址，如http://www.st.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 2URL"; Value = "元件厂商的网站连接2，通常是元件数据说明文件地址，如http://www.fairchildsemi.com/ds/2N%2F2N3904.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2  Description"; Value = "元件数据连接2，一般是生产厂商的元件数据库连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created"; Value = "制造厂商"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kind"; Value = "General"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Date"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Note"; Value = "最近的应用笔记修订本"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Object"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "AXIAL0.3-AXIA1.0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "AXIAL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Spice Prefix"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubKind"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=R9(1/4WA1)
+Add component (AddParameter): Name = "Component Link1Description"; Value = "元件数据连接1，一般是生产厂商的元件描述连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 1URL"; Value = "元件厂商的网站连接1，通常是主页地址，如http://www.st.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 2URL"; Value = "元件厂商的网站连接2，通常是元件数据说明文件地址，如http://www.fairchildsemi.com/ds/2N%2F2N3904.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2  Description"; Value = "元件数据连接2，一般是生产厂商的元件数据库连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created"; Value = "制造厂商"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kind"; Value = "General"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Date"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Note"; Value = "最近的应用笔记修订本"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Object"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "AXIAL0.3-AXIA1.0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "AXIAL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Spice Prefix"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubKind"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=R10(1/4WA1)
+Add component (AddParameter): Name = "Component Link1Description"; Value = "元件数据连接1，一般是生产厂商的元件描述连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 1URL"; Value = "元件厂商的网站连接1，通常是主页地址，如http://www.st.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 2URL"; Value = "元件厂商的网站连接2，通常是元件数据说明文件地址，如http://www.fairchildsemi.com/ds/2N%2F2N3904.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2  Description"; Value = "元件数据连接2，一般是生产厂商的元件数据库连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created"; Value = "制造厂商"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kind"; Value = "General"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Date"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Note"; Value = "最近的应用笔记修订本"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Object"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "AXIAL0.3-AXIA1.0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "AXIAL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Spice Prefix"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubKind"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=R11(1/4WA1)
+Add component (AddParameter): Name = "Component Link1Description"; Value = "元件数据连接1，一般是生产厂商的元件描述连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 1URL"; Value = "元件厂商的网站连接1，通常是主页地址，如http://www.st.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 2URL"; Value = "元件厂商的网站连接2，通常是元件数据说明文件地址，如http://www.fairchildsemi.com/ds/2N%2F2N3904.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2  Description"; Value = "元件数据连接2，一般是生产厂商的元件数据库连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created"; Value = "制造厂商"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kind"; Value = "General"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Date"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Note"; Value = "最近的应用笔记修订本"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Object"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "AXIAL0.3-AXIA1.0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "AXIAL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Spice Prefix"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubKind"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=R12(RES_PACK - 2)
+Add component (AddParameter): Name = "Component Link1Description"; Value = "元件数据连接1，一般是生产厂商的元件描述连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 1URL"; Value = "元件厂商的网站连接1，通常是主页地址，如http://www.st.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 2URL"; Value = "元件厂商的网站连接2，通常是元件数据说明文件地址，如http://www.fairchildsemi.com/ds/2N%2F2N3904.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2  Description"; Value = "元件数据连接2，一般是生产厂商的元件数据库连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created"; Value = "制造厂商"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kind"; Value = "General"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Date"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Note"; Value = "最近的应用笔记修订本"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Object"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "AXIAL0.3-AXIA1.0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "AXIAL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Spice Prefix"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubKind"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=R13(AXIAL-20*5MM-W)
+Add component (AddParameter): Name = "Component Link1Description"; Value = "元件数据连接1，一般是生产厂商的元件描述连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 1URL"; Value = "元件厂商的网站连接1，通常是主页地址，如http://www.st.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 2URL"; Value = "元件厂商的网站连接2，通常是元件数据说明文件地址，如http://www.fairchildsemi.com/ds/2N%2F2N3904.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2  Description"; Value = "元件数据连接2，一般是生产厂商的元件数据库连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created"; Value = "制造厂商"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kind"; Value = "General"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Date"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Note"; Value = "最近的应用笔记修订本"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Object"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "AXIAL0.3-AXIA1.0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "AXIAL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Spice Prefix"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubKind"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=RP1(3296-103)
+Add component (AddParameter): Name = "Component Link1Description"; Value = "元件数据连接1，一般是生产厂商的元件描述连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 1URL"; Value = "元件厂商的网站连接1，通常是主页地址，如http://www.st.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 2URL"; Value = "元件厂商的网站连接2，通常是元件数据说明文件地址，如http://www.fairchildsemi.com/ds/2N%2F2N3904.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2  Description"; Value = "元件数据连接2，一般是生产厂商的元件数据库连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created"; Value = "制造厂商"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kind"; Value = "General"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Date"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Note"; Value = "最近的应用笔记修订本"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Object"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "AXIAL0.3-AXIA1.0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "AXIAL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Spice Prefix"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubKind"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=RP2(3296-200)
+Add component (AddParameter): Name = "Component Link1Description"; Value = "元件数据连接1，一般是生产厂商的元件描述连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 1URL"; Value = "元件厂商的网站连接1，通常是主页地址，如http://www.st.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 2URL"; Value = "元件厂商的网站连接2，通常是元件数据说明文件地址，如http://www.fairchildsemi.com/ds/2N%2F2N3904.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2  Description"; Value = "元件数据连接2，一般是生产厂商的元件数据库连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created"; Value = "制造厂商"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kind"; Value = "General"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Date"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Note"; Value = "最近的应用笔记修订本"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Object"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "AXIAL0.3-AXIA1.0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "AXIAL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Spice Prefix"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubKind"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=RP3(3296-103)
+Add component (AddParameter): Name = "Component Link1Description"; Value = "元件数据连接1，一般是生产厂商的元件描述连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 1URL"; Value = "元件厂商的网站连接1，通常是主页地址，如http://www.st.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 2URL"; Value = "元件厂商的网站连接2，通常是元件数据说明文件地址，如http://www.fairchildsemi.com/ds/2N%2F2N3904.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2  Description"; Value = "元件数据连接2，一般是生产厂商的元件数据库连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created"; Value = "制造厂商"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kind"; Value = "General"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Date"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Note"; Value = "最近的应用笔记修订本"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Object"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "AXIAL0.3-AXIA1.0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "AXIAL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Spice Prefix"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubKind"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=RP4(3296-203)
+Add component (AddParameter): Name = "Component Link1Description"; Value = "元件数据连接1，一般是生产厂商的元件描述连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 1URL"; Value = "元件厂商的网站连接1，通常是主页地址，如http://www.st.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 2URL"; Value = "元件厂商的网站连接2，通常是元件数据说明文件地址，如http://www.fairchildsemi.com/ds/2N%2F2N3904.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2  Description"; Value = "元件数据连接2，一般是生产厂商的元件数据库连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created"; Value = "制造厂商"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kind"; Value = "General"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Date"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Note"; Value = "最近的应用笔记修订本"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Object"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "AXIAL0.3-AXIA1.0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "AXIAL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Spice Prefix"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubKind"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=RP5(3296-100)
+Add component (AddParameter): Name = "Component Link1Description"; Value = "元件数据连接1，一般是生产厂商的元件描述连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 1URL"; Value = "元件厂商的网站连接1，通常是主页地址，如http://www.st.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Link 2URL"; Value = "元件厂商的网站连接2，通常是元件数据说明文件地址，如http://www.fairchildsemi.com/ds/2N%2F2N3904.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2  Description"; Value = "元件数据连接2，一般是生产厂商的元件数据库连接。"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created"; Value = "制造厂商"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kind"; Value = "General"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Date"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Latest Revision Note"; Value = "最近的应用笔记修订本"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Object"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "AXIAL0.3-AXIA1.0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "AXIAL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "13-Apr-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Spice Prefix"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubKind"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=SMG1(0.36英寸2位数码管)
+Added Component: Designator=SMG2(0.36英寸2位数码管)
+Added Component: Designator=T1(晶振_小)
+Added Component: Designator=T2(TL431)
+Added Component: Designator=U2(DIP20)
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=XTAL2 Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=XTAL1 Pin=C2-2
+Added Pin To Net: NetName=+5v Pin=C3-1
+Added Pin To Net: NetName=RET Pin=C3-2
+Added Pin To Net: NetName=+24v Pin=C4-1
+Added Pin To Net: NetName=NetC4_2 Pin=C4-2
+Added Pin To Net: NetName=+12v Pin=C5-1
+Added Pin To Net: NetName=NetC4_2 Pin=C5-2
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=+12v Pin=C6-2
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=+5v Pin=C7-2
+Added Pin To Net: NetName=GND Pin=C8-1
+Added Pin To Net: NetName=O1 Pin=C8-2
+Added Pin To Net: NetName=GND Pin=C9-1
+Added Pin To Net: NetName=NetC9_2 Pin=C9-2
+Added Pin To Net: NetName=NetD1_1 Pin=D1-1
+Added Pin To Net: NetName=NetC4_2 Pin=D1-2
+Added Pin To Net: NetName=NetD2_1 Pin=D2-1
+Added Pin To Net: NetName=GND Pin=D2-2
+Added Pin To Net: NetName=NetC4_2 Pin=D3-1
+Added Pin To Net: NetName=NetD3_2 Pin=D3-2
+Added Pin To Net: NetName=NetH1_1 Pin=H1-1
+Added Pin To Net: NetName=+24v Pin=H1-3
+Added Pin To Net: NetName=RET Pin=key1-1
+Added Pin To Net: NetName=RET Pin=key1-1
+Added Pin To Net: NetName=+5v Pin=key1-2
+Added Pin To Net: NetName=+5v Pin=key1-2
+Added Pin To Net: NetName=GND Pin=key2-1
+Added Pin To Net: NetName=GND Pin=key2-1
+Added Pin To Net: NetName=K1 Pin=key2-2
+Added Pin To Net: NetName=K1 Pin=key2-2
+Added Pin To Net: NetName=GND Pin=key3-1
+Added Pin To Net: NetName=GND Pin=key3-1
+Added Pin To Net: NetName=K2 Pin=key3-2
+Added Pin To Net: NetName=K2 Pin=key3-2
+Added Pin To Net: NetName=GND Pin=key4-1
+Added Pin To Net: NetName=GND Pin=key4-1
+Added Pin To Net: NetName=K3 Pin=key4-2
+Added Pin To Net: NetName=K3 Pin=key4-2
+Added Pin To Net: NetName=RFB Pin=L1-1
+Added Pin To Net: NetName=NetL1_2 Pin=L1-2
+Added Pin To Net: NetName=GND Pin=L1-3
+Added Pin To Net: NetName=NetC4_2 Pin=L1-3
+Added Pin To Net: NetName=+12v Pin=L1-4
+Added Pin To Net: NetName=GND Pin=L1-4
+Added Pin To Net: NetName=GND Pin=L1-5
+Added Pin To Net: NetName=NetC4_2 Pin=L1-5
+Added Pin To Net: NetName=NetL1_6 Pin=L1-6
+Added Pin To Net: NetName=O1 Pin=L1-7
+Added Pin To Net: NetName=+24v Pin=L1-8
+Added Pin To Net: NetName=NetD3_2 Pin=L2-1
+Added Pin To Net: NetName=+12v Pin=L2-2
+Added Pin To Net: NetName=NetL3_1 Pin=L3-1
+Added Pin To Net: NetName=+5v Pin=L3-2
+Added Pin To Net: NetName=+12v Pin=L3-3
+Added Pin To Net: NetName=NetL4_1 Pin=L4-1
+Added Pin To Net: NetName=NetC9_2 Pin=L4-2
+Added Pin To Net: NetName=O1 Pin=L4-3
+Added Pin To Net: NetName=NetH1_1 Pin=P1-1
+Added Pin To Net: NetName=GND Pin=P1-2
+Added Pin To Net: NetName=NetC9_2 Pin=P2-1
+Added Pin To Net: NetName=GND Pin=P2-2
+Added Pin To Net: NetName=RET Pin=R1-1
+Added Pin To Net: NetName=GND Pin=R1-2
+Added Pin To Net: NetName=+5v Pin=R2-1
+Added Pin To Net: NetName=K1 Pin=R2-2
+Added Pin To Net: NetName=+5v Pin=R3-1
+Added Pin To Net: NetName=K2 Pin=R3-2
+Added Pin To Net: NetName=+5v Pin=R4-1
+Added Pin To Net: NetName=K3 Pin=R4-2
+Added Pin To Net: NetName=+5v Pin=R5-1
+Added Pin To Net: NetName=NetL3_1 Pin=R5-2
+Added Pin To Net: NetName=+12v Pin=R6-1
+Added Pin To Net: NetName=+5.12v Pin=R6-2
+Added Pin To Net: NetName=NetR7_1 Pin=R7-1
+Added Pin To Net: NetName=GND Pin=R7-2
+Added Pin To Net: NetName=NetC9_2 Pin=R8-1
+Added Pin To Net: NetName=NetL4_1 Pin=R8-2
+Added Pin To Net: NetName=RFB Pin=R9-1
+Added Pin To Net: NetName=NetL1_6 Pin=R9-2
+Added Pin To Net: NetName=+12v Pin=R10-1
+Added Pin To Net: NetName=NetD1_1 Pin=R10-2
+Added Pin To Net: NetName=+5v Pin=R11-1
+Added Pin To Net: NetName=NetD2_1 Pin=R11-2
+Added Pin To Net: NetName=NetR12_1 Pin=R12-1
+Added Pin To Net: NetName=dp Pin=R12-2
+Added Pin To Net: NetName=NetR12_3 Pin=R12-3
+Added Pin To Net: NetName=g Pin=R12-4
+Added Pin To Net: NetName=NetR12_5 Pin=R12-5
+Added Pin To Net: NetName=f Pin=R12-6
+Added Pin To Net: NetName=NetR12_7 Pin=R12-7
+Added Pin To Net: NetName=e Pin=R12-8
+Added Pin To Net: NetName=NetR12_9 Pin=R12-9
+Added Pin To Net: NetName=d Pin=R12-10
+Added Pin To Net: NetName=NetR12_11 Pin=R12-11
+Added Pin To Net: NetName=c Pin=R12-12
+Added Pin To Net: NetName=NetR12_13 Pin=R12-13
+Added Pin To Net: NetName=b Pin=R12-14
+Added Pin To Net: NetName=NetR12_15 Pin=R12-15
+Added Pin To Net: NetName=a Pin=R12-16
+Added Pin To Net: NetName=NetC9_2 Pin=R13-1
+Added Pin To Net: NetName=GND Pin=R13-2
+Added Pin To Net: NetName=NetL3_1 Pin=RP1-1
+Added Pin To Net: NetName=GND Pin=RP1-2
+Added Pin To Net: NetName=NetL3_1 Pin=RP1-3
+Added Pin To Net: NetName=+5.12v Pin=RP2-1
+Added Pin To Net: NetName=NetR7_1 Pin=RP2-2
+Added Pin To Net: NetName=+5.12v Pin=RP2-3
+Added Pin To Net: NetName=NetL4_1 Pin=RP3-1
+Added Pin To Net: NetName=GND Pin=RP3-2
+Added Pin To Net: NetName=NetL4_1 Pin=RP3-3
+Added Pin To Net: NetName=NetRP4_1 Pin=RP4-1
+Added Pin To Net: NetName=NetL1_2 Pin=RP4-2
+Added Pin To Net: NetName=NetL1_2 Pin=RP4-3
+Added Pin To Net: NetName=NetL1_6 Pin=RP5-1
+Added Pin To Net: NetName=O1 Pin=RP5-2
+Added Pin To Net: NetName=NetL1_6 Pin=RP5-3
+Added Pin To Net: NetName=a Pin=SMG1-a
+Added Pin To Net: NetName=b Pin=SMG1-b
+Added Pin To Net: NetName=c Pin=SMG1-c
+Added Pin To Net: NetName=dp Pin=SMG1-dp
+Added Pin To Net: NetName=d Pin=SMG1-d
+Added Pin To Net: NetName=e Pin=SMG1-e
+Added Pin To Net: NetName=f Pin=SMG1-f
+Added Pin To Net: NetName=g Pin=SMG1-g
+Added Pin To Net: NetName=W3 Pin=SMG1-H1
+Added Pin To Net: NetName=W4 Pin=SMG1-H2
+Added Pin To Net: NetName=a Pin=SMG2-a
+Added Pin To Net: NetName=b Pin=SMG2-b
+Added Pin To Net: NetName=c Pin=SMG2-c
+Added Pin To Net: NetName=dp Pin=SMG2-dp
+Added Pin To Net: NetName=d Pin=SMG2-d
+Added Pin To Net: NetName=e Pin=SMG2-e
+Added Pin To Net: NetName=f Pin=SMG2-f
+Added Pin To Net: NetName=g Pin=SMG2-g
+Added Pin To Net: NetName=W1 Pin=SMG2-H1
+Added Pin To Net: NetName=W2 Pin=SMG2-H2
+Added Pin To Net: NetName=XTAL2 Pin=T1-1
+Added Pin To Net: NetName=XTAL1 Pin=T1-2
+Added Pin To Net: NetName=NetR7_1 Pin=T2-1
+Added Pin To Net: NetName=GND Pin=T2-2
+Added Pin To Net: NetName=+5.12v Pin=T2-3
+Added Pin To Net: NetName=GND Pin=U2-1
+Added Pin To Net: NetName=NetR12_15 Pin=U2-2
+Added Pin To Net: NetName=NetR12_13 Pin=U2-3
+Added Pin To Net: NetName=NetR12_11 Pin=U2-4
+Added Pin To Net: NetName=NetR12_9 Pin=U2-5
+Added Pin To Net: NetName=NetR12_7 Pin=U2-6
+Added Pin To Net: NetName=NetR12_5 Pin=U2-7
+Added Pin To Net: NetName=NetR12_3 Pin=U2-8
+Added Pin To Net: NetName=NetR12_1 Pin=U2-9
+Added Pin To Net: NetName=GND Pin=U2-10
+Added Pin To Net: NetName=B7 Pin=U2-11
+Added Pin To Net: NetName=B6 Pin=U2-12
+Added Pin To Net: NetName=B5 Pin=U2-13
+Added Pin To Net: NetName=B4 Pin=U2-14
+Added Pin To Net: NetName=B3 Pin=U2-15
+Added Pin To Net: NetName=B2 Pin=U2-16
+Added Pin To Net: NetName=B1 Pin=U2-17
+Added Pin To Net: NetName=B0 Pin=U2-18
+Added Pin To Net: NetName=GND Pin=U2-20
+Added Member To Class: ClassName=Sheet1 Member=Component C1 22P
+Added Member To Class: ClassName=Sheet1 Member=Component C2 22P
+Added Member To Class: ClassName=Sheet1 Member=Component C3 10uf
+Added Member To Class: ClassName=Sheet1 Member=Component C4 470μF
+Added Member To Class: ClassName=Sheet1 Member=Component C5 220uF
+Added Member To Class: ClassName=Sheet1 Member=Component C6 0.1μF
+Added Member To Class: ClassName=Sheet1 Member=Component C7 1μF
+Added Member To Class: ClassName=Sheet1 Member=Component C8 0.1μF
+Added Member To Class: ClassName=Sheet1 Member=Component C9 1μF
+Added Member To Class: ClassName=Sheet1 Member=Component D1 LED
+Added Member To Class: ClassName=Sheet1 Member=Component D2 LED
+Added Member To Class: ClassName=Sheet1 Member=Component D3 IN5824
+Added Member To Class: ClassName=Sheet1 Member=Component H1 滑动开关
+Added Member To Class: ClassName=Sheet1 Member=Component key1 KEY_1
+Added Member To Class: ClassName=Sheet1 Member=Component key2 KEY_1
+Added Member To Class: ClassName=Sheet1 Member=Component key3 KEY_1
+Added Member To Class: ClassName=Sheet1 Member=Component key4 KEY_1
+Added Member To Class: ClassName=Sheet1 Member=Component L1 LM258
+Added Member To Class: ClassName=Sheet1 Member=Component L1 LM2596
+Added Member To Class: ClassName=Sheet1 Member=Component L2 47μH
+Added Member To Class: ClassName=Sheet1 Member=Component L3 LM317_Adj
+Added Member To Class: ClassName=Sheet1 Member=Component L4 LM317_Adj
+Added Member To Class: ClassName=Sheet1 Member=Component P1 电源端子2P
+Added Member To Class: ClassName=Sheet1 Member=Component P2 电源端子2P
+Added Member To Class: ClassName=Sheet1 Member=Component R1 10k
+Added Member To Class: ClassName=Sheet1 Member=Component R2 10k
+Added Member To Class: ClassName=Sheet1 Member=Component R3 10k
+Added Member To Class: ClassName=Sheet1 Member=Component R4 10k
+Added Member To Class: ClassName=Sheet1 Member=Component R5 200
+Added Member To Class: ClassName=Sheet1 Member=Component R6 1k
+Added Member To Class: ClassName=Sheet1 Member=Component R7 100
+Added Member To Class: ClassName=Sheet1 Member=Component R8 200
+Added Member To Class: ClassName=Sheet1 Member=Component R9 1k
+Added Member To Class: ClassName=Sheet1 Member=Component R10 1k
+Added Member To Class: ClassName=Sheet1 Member=Component R11 100
+Added Member To Class: ClassName=Sheet1 Member=Component R12 100
+Added Member To Class: ClassName=Sheet1 Member=Component R13 10
+Added Member To Class: ClassName=Sheet1 Member=Component RP1 1K
+Added Member To Class: ClassName=Sheet1 Member=Component RP2 200
+Added Member To Class: ClassName=Sheet1 Member=Component RP3 1K
+Added Member To Class: ClassName=Sheet1 Member=Component RP4 20k
+Added Member To Class: ClassName=Sheet1 Member=Component RP5 10k
+Added Member To Class: ClassName=Sheet1 Member=Component SMG1 共阴数码管
+Added Member To Class: ClassName=Sheet1 Member=Component SMG2 共阴数码管
+Added Member To Class: ClassName=Sheet1 Member=Component T1 11.0592KHZ
+Added Member To Class: ClassName=Sheet1 Member=Component T2 TL431
+Added Member To Class: ClassName=Sheet1 Member=Component U2 74HC245
+Added Room: Name=Sheet1

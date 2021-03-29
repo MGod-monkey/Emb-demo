@@ -1,0 +1,5 @@
+Added Component: Designator=D3(二极管_整流)
+Added Pin To Net: NetName=GND Pin=D3-1
+Added Pin To Net: NetName=NetD3_2 Pin=D3-2
+Added Member To Class: ClassName=电源 Member=Component D3 IN5824
+Added Room: Name=电源

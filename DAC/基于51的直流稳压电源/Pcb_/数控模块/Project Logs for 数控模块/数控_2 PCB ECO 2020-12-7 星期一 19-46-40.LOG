@@ -1,0 +1,8 @@
+Added Component: Designator=P5(Header_1)
+Add component (AddParameter): Name = "Comm"; Value = "²åÕë1"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetP5_1 Pin=P5-1
+Added Pin To Net: NetName=NetP5_1 Pin=R10-1
+Added Net: Name=NetP5_1
+Added Member To Class: ClassName=Êý¿Ø Member=Component L1 LM317_Adj
+Added Member To Class: ClassName=Êý¿Ø Member=Component P5 Header_1
+Added Room: Name=Êý¿Ø

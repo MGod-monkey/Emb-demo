@@ -1,0 +1,18 @@
+Removed Pin From Net: NetName=A0 Pin=U1-21
+Removed Pin From Net: NetName=A1 Pin=U1-22
+Removed Pin From Net: NetName=A2 Pin=U1-23
+Removed Pin From Net: NetName=A3 Pin=U1-24
+Removed Pin From Net: NetName=A4 Pin=U1-25
+Removed Pin From Net: NetName=A5 Pin=U1-26
+Removed Pin From Net: NetName=A6 Pin=U1-27
+Removed Pin From Net: NetName=A7 Pin=U1-28
+Added Pin To Net: NetName=A7 Pin=U1-21
+Added Pin To Net: NetName=A6 Pin=U1-22
+Added Pin To Net: NetName=A5 Pin=U1-23
+Added Pin To Net: NetName=A4 Pin=U1-24
+Added Pin To Net: NetName=A3 Pin=U1-25
+Added Pin To Net: NetName=A2 Pin=U1-26
+Added Pin To Net: NetName=A1 Pin=U1-27
+Added Pin To Net: NetName=A0 Pin=U1-28
+Added Member To Class: ClassName=Êý¿Ø Member=Component L1 LM317_Adj
+Added Room: Name=Êý¿Ø
