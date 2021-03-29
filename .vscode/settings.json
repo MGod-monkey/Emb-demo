@@ -16,5 +16,12 @@
             "command": "extension.execute",
             "priority": 4
         }
+    ],
+    "python.autoComplete.extraPaths": [
+        "c:/Users/17814/.vscode/extensions/rt-thread.rt-thread-micropython-1.0.7/microExamples/code-completion"
+    ],
+    "python.linting.pylintArgs": [
+        "--init-hook",
+        "import sys; sys.path.append('c:/Users/17814/.vscode/extensions/rt-thread.rt-thread-micropython-1.0.7/microExamples/code-completion')"
     ]
 }
