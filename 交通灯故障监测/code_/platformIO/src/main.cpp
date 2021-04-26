@@ -1,25 +1,28 @@
 /*
- * @Author: your name
+ * @Author: MGodmonkey
  * @Date: 2021-04-03 20:12:40
  * @LastEditTime: 2021-04-06 21:03:33
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
+ * @LastEditors: MGodmonkey
+ * @Description: 交通灯故障监测系统
  * @FilePath: \test_OLED\src\main.cpp
  */
-#include <Wire.h>               // Only needed for Arduino 1.6.5 and earlier
-#include "SSD1306Wire.h"        // legacy: #include "SSD1306.h"
 
+#include <Wire.h>
+#include "SSD1306Wire.h"
 // 图片库，格式: xmb
 #include <OLEDbits.h>
 #include <Arduino.h>
 #include <PCF8574.h>
 #include <Wire.h>
 
+#define BLYNK_PRINT Serial
+#include <WiFi.h>
+#include <WiFiClient.h>
+#include <BlynkSimpleEsp32.h>
 
 
-// Initialize the OLED display using Arduino Wire:
-SSD1306Wire display(0x3c, 22, 23);   // ADDRESS, SDA, SCL  -  SDA and SCL usually populate automatically based on your board's pins_arduino.h
-PCF8574 LED(0x20);  // add leds to lines      (used as output)
+SSD1306Wire display(0x3c, 22, 23);   // 初识化OLED
+PCF8574 LED(0x20);  // 初识化LED
 
 typedef void (*Demo)(void);
 #define GREEN_WAIT_TIME 3000  //绿灯通行时长
@@ -30,31 +33,47 @@ typedef void (*Demo)(void);
 int demoMode = 0;
 long timer = 0;
 int flag = 1;
-bool isERROR = false;
-uint8_t LEDCode[] = {0114, 0122, 0141, 0122, 0214, 0122};
-uint8_t ERRORCode[] = {0225, 0152, 0261, 017, 0252, 0360};
-char *string[] = {"Right to Left", "黄灯，请等待！", "Left to Right", "黄灯，请等待！", "Down to Left", "黄灯，请等待！"};
+uint isERROR = 0;
+uint8_t LEDCode[] = {0114, 0122, 0141, 0122, 0214, 0122}; // 正确的LED显示编码
+uint8_t ERRORCode[] = {0225, 0152, 0261, 017, 0252, 0360};  // 错误的LED显示编码
+char *str[] = {"Right to Left", "yellow deng, plase wait!", "Left to Right", "yellow deng, plase wait!", "Down to Left", "yellow deng, plase wait!"};
 int delayTime[] = {GREEN_WAIT_TIME, YELLOW_WAIT_TIME, GREEN_WAIT_TIME, YELLOW_WAIT_TIME, GREEN_WAIT_TIME, YELLOW_WAIT_TIME};
 
+// 关于Blynk平台的一些配置
+char auth[] = "6LGEA7a3W4_MGKjiuPlyVZyLIiA4OZHD";    //token
+char ssid[] = "mi";   //热点名称
+char pass[] = "wpq5201314";   //热点密码
+
+// 创建控制台组件
+WidgetTerminal terminal(V0);
 // 声明函数
 void onChange();
+void main_run();
 
 void setup() {
   Serial.begin(115200);
   Serial.println();
   Serial.println();
-  Serial.printf("now is: %s\n", string[demoMode]);
+  Serial.printf("now is: %s\n", str[demoMode]);
 
   // 初识化OLED，pcf8574
   display.init();
   display.flipScreenVertically();
   LED.begin(18, 19, 0);
   LED.write8(LEDCode[demoMode]);
+  display.setFont(Syncopate_Bold_9);
+  display.drawString(0, 12, "connecting WIFI to");
+  display.setFont(ArialMT_Plain_24);
+  display.drawString(5, 25, ssid);
+  display.display();
 
   //定义按键中断
   pinMode(K1, INPUT_PULLUP);
   pinMode(K2, INPUT_PULLUP);
   attachInterrupt(K1, onChange, FALLING);
+
+  //物联网模块
+  Blynk.begin(auth, ssid, pass);
 }
 
 // 图片展示
@@ -104,6 +123,8 @@ void YELLOW() {
   drawImage(0, 0, YELLOW_width, YELLOW_height, YELLOW_bits);
   drawImage(0, 0, YELLOW_width, YELLOW_height, YELLOW_bits);
 }
+Demo demos[] = {RTL, YELLOW, LTR, YELLOW, CTL, YELLOW};
+int demoLength = (sizeof(demos) / sizeof(Demo));
 
 // 显示故障界面
 void ERROR() {
@@ -113,34 +134,67 @@ void ERROR() {
   Serial.println("\n#################################################################");
   Serial.println("警告：正在发生重大电路故障事故，请相关人员立即前往直通520路口进行救援！");
   Serial.println("#################################################################\n");
+  terminal.println("###############################################");
+  terminal.flush();
+  terminal.println("Warning:Something unspeakable is happening!");
+  terminal.flush();
+  terminal.println("###############################################");
+  terminal.flush();
+  Blynk.notify("警告:正在发生重大电路故障事故，请相关人员立即前往直通520路口进行救援!");
   flag = 0;
   }
 }
 
+// 组件回调函数
+BLYNK_CONNECTED() {
+  Blynk.syncVirtual(V1);
+}
+BLYNK_WRITE(V0) {
+  // 清除显示屏
+  if (String("clear") == param.asStr()) {
+    terminal.clear();
+  }
+  else {
+    terminal.println("\nERROR: Unknown command!");
+    terminal.flush();
+  }
+}
+BLYNK_WRITE(V1) {
+  int buttonState = param.asInt();
+  isERROR = buttonState;
+}
 
-Demo demos[] = {RTL, YELLOW, LTR, YELLOW, CTL, YELLOW};
-int demoLength = (sizeof(demos) / sizeof(Demo));
 // 按键中断
 void onChange() {
   isERROR = !isERROR;
   while (!digitalRead(K1));
 }
 
-void loop() {
-    display.clear();  //清屏
+// 交通灯主函数
+void main_run() {
+  display.clear();  //清屏
   if (!isERROR){
     LED.write8(LEDCode[demoMode]);
     demos[demoMode]();
     flag = 1;
-    // draw the current demo method
+    //动画组切换
     if (millis() - timer > delayTime[demoMode]) {
-      demoMode = (demoMode + 1)  % demoLength;  //动画组切换
-      Serial.printf("now is: %s\n", string[demoMode]);
+      demoMode = (demoMode + 1)  % demoLength;  
+      Serial.printf("now is: %s\n", str[demoMode]);
+      terminal.printf("now is: %s\n", str[demoMode]);
+      terminal.flush();
+      delay(10);
       timer = millis();
     }
   }
   else {
       ERROR();
     }
+}
+
+
+void loop() {
+  Blynk.run();
+  main_run();
   delay(10);
 }
