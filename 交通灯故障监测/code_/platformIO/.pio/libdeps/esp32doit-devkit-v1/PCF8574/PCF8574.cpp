@@ -55,39 +55,39 @@ PCF8574::PCF8574(const uint8_t deviceAddress)
 #if defined (ESP8266) || defined(ESP32)
 void PCF8574::begin(uint8_t sda, uint8_t scl, uint8_t val)
 {
-  Wire1.begin(sda, scl);
+  Wire.begin(sda, scl);
   PCF8574::write8(val);
 }
 #endif
 
 void PCF8574::begin(uint8_t val)
 {
-  Wire1.begin();
+  Wire.begin();
   PCF8574::write8(val);
 }
 
-// removed Wire1.beginTransmission(addr);
+// removed Wire.beginTransmission(addr);
 // with  @100KHz -> 265 micros()
 // without @100KHz -> 132 micros()
 // without @400KHz -> 52 micros()
 // TODO @800KHz -> ??
 uint8_t PCF8574::read8()
 {
-    if (Wire1.requestFrom(_address, (uint8_t)1) != 1)
+    if (Wire.requestFrom(_address, (uint8_t)1) != 1)
     {
         _error = PCF8574_I2C_ERROR;
         return _dataIn; // last value
     }
-    _dataIn = Wire1.read();
+    _dataIn = Wire.read();
     return _dataIn;
 }
 
 void PCF8574::write8(const uint8_t value)
 {
     _dataOut = value;
-    Wire1.beginTransmission(_address);
-    Wire1.write(_dataOut);
-    _error = Wire1.endTransmission();
+    Wire.beginTransmission(_address);
+    Wire.write(_dataOut);
+    _error = Wire.endTransmission();
 }
 
 uint8_t PCF8574::read(const uint8_t pin)

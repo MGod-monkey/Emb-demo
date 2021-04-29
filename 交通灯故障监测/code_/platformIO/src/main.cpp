@@ -59,8 +59,8 @@ void setup() {
   // 初识化OLED，pcf8574
   display.init();
   display.flipScreenVertically();
-  LED.begin(18, 19, 0);
-  LED.write8(LEDCode[demoMode]);
+  LED.begin(22, 23, 0);
+  // LED.write8(LEDCode[demoMode]);
   display.setFont(Syncopate_Bold_9);
   display.drawString(0, 12, "connecting WIFI to");
   display.setFont(ArialMT_Plain_24);
@@ -189,6 +189,7 @@ void main_run() {
   }
   else {
       ERROR();
+      delay(1000);
     }
 }
 
@@ -196,5 +197,4 @@ void main_run() {
 void loop() {
   Blynk.run();
   main_run();
-  delay(10);
 }
