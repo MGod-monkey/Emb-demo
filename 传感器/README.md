@@ -31,5 +31,24 @@
 | 磁环 | ![image-20210504135443480](https://i.loli.net/2021/05/04/pwBqiRh25mn74uE.png) |  | |  |
 | 红外发射 | ![image-20210504135509083](https://i.loli.net/2021/05/04/fVGrmq6pT1h9Rse.png) |[IRremoteESP8266](https://github.com/crankyoldgit/IRremoteESP8266) |  | Pin1->D0(GPIO16)<br/>Pin2->3.3V<br/>Pin3->GND |
 
-使用说明：
+>``注:元器件朝上，引脚朝下，从左到右依次为Pin1，Pin2···``
 
+
+
+使用说明
+
+VScode+platformIO:
+
+1. 新建项目工程
+
+2. 添加第三方库到工程中
+
+3. 复制code中的代码到`./src/main.cpp`中
+
+4. 连线->编译->上传
+
+Arduino:
+
+1. 下载code中的文件到本地，或在arduino中新建文件将code中的代码复制到文件中
+2. 从`工具->加载库->管理库`中添加第三方库
+4. 连线->编译->上传
