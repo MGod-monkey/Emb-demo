@@ -10,11 +10,11 @@
 #include "PCF8574.h"
 #include <Wire.h>
 
-PCF8574 PCF_01(0x20);
+PCF8574 PCF_01(0x38);
 
 void setup()
 {
-  Serial.begin(115200);
+  Serial.begin(9600);
   Serial.print("PCF8574_test version: ");
   Serial.println(PCF8574_LIB_VERSION);
   

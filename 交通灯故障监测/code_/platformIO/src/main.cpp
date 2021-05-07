@@ -30,31 +30,35 @@ typedef void (*Demo)(void);
 #define K1 17  //定义K1按键引脚
 #define K2 16  //定义K2按键引脚 
 
-int demoMode = 0;
+int demoMode = 0, badLED = -1, flag = 1, m = 0;
 long timer = 0;
-int flag = 1;
-uint isERROR = 0;
+bool isERROR = false;
+uint isERROR_1 = 0;
+uint isERROR_2 = 0;
+uint OFFLED = 0b11111111;
 uint8_t LEDCode[] = {0114, 0122, 0141, 0122, 0214, 0122}; // 正确的LED显示编码
-uint8_t ERRORCode[] = {0225, 0152, 0261, 017, 0252, 0360};  // 错误的LED显示编码
+uint8_t ERRORCode[] = {0225, 0152, 0261, 017, 0252, 0360, 0340, 07, 070};  // 错误的LED显示编码
+char *LEDstr[] = {"RL", "YL", "GL", "RR", "YR", "GR", "RC", "GC"};
 char *str[] = {"Right to Left", "yellow deng, plase wait!", "Left to Right", "yellow deng, plase wait!", "Down to Left", "yellow deng, plase wait!"};
 int delayTime[] = {GREEN_WAIT_TIME, YELLOW_WAIT_TIME, GREEN_WAIT_TIME, YELLOW_WAIT_TIME, GREEN_WAIT_TIME, YELLOW_WAIT_TIME};
 
 // 关于Blynk平台的一些配置
-char auth[] = "6LGEA7a3W4_MGKjiuPlyVZyLIiA4OZHD";    //token
+char auth[] = "BHtYAYW7Pqw99dOyg2XIaV9OLzCRKBbw";    //token
 char ssid[] = "mi";   //热点名称
 char pass[] = "wpq5201314";   //热点密码
 
 // 创建控制台组件
 WidgetTerminal terminal(V0);
 // 声明函数
-void onChange();
+void ERROR_1();
+void ERROR_2();
 void main_run();
 
 void setup() {
   Serial.begin(115200);
   Serial.println();
   Serial.println();
-  Serial.printf("now is: %s\n", str[demoMode]);
+  // Serial.printf("now is: %s\n", str[demoMode]);
 
   // 初识化OLED，pcf8574
   display.init();
@@ -70,10 +74,12 @@ void setup() {
   //定义按键中断
   pinMode(K1, INPUT_PULLUP);
   pinMode(K2, INPUT_PULLUP);
-  attachInterrupt(K1, onChange, FALLING);
+  attachInterrupt(digitalPinToInterrupt(K1), ERROR_1, FALLING);
+  attachInterrupt(digitalPinToInterrupt(K2), ERROR_2, FALLING);
 
   //物联网模块
   Blynk.begin(auth, ssid, pass);
+  randomSeed(115200);
 }
 
 // 图片展示
@@ -128,19 +134,37 @@ int demoLength = (sizeof(demos) / sizeof(Demo));
 
 // 显示故障界面
 void ERROR() {
-  LED.write8(ERRORCode[random(0,6)]);
   drawImage(0, 0, ERROR_width, ERROR_height, ERROR_bits);
-  if (flag){
-  Serial.println("\n#################################################################");
-  Serial.println("警告：正在发生重大电路故障事故，请相关人员立即前往直通520路口进行救援！");
-  Serial.println("#################################################################\n");
-  terminal.println("###############################################");
-  terminal.flush();
-  terminal.println("Warning:Something unspeakable is happening!");
-  terminal.flush();
-  terminal.println("###############################################");
-  terminal.flush();
-  Blynk.notify("警告:正在发生重大电路故障事故，请相关人员立即前往直通520路口进行救援!");
+  if (flag && isERROR_2){
+    Serial.println("\n#################################################################");
+    Serial.println("警告：正在发生重大电路故障事故，请相关人员立即前往直通520路口进行救援！");
+    Serial.println("#################################################################");
+    Serial.printf("提示：监测到LED{%s}疑似损坏！\n", LEDstr[badLED]);
+    Serial.println("#################################################################\n");
+    terminal.println("###############################################");
+    terminal.flush();
+    terminal.println("Warning:Something unspeakable is happening!");
+    terminal.flush();
+    terminal.printf("Suspected damage to LED{%s} was detected\n", LEDstr[badLED]);
+    terminal.flush();
+    terminal.println("###############################################");
+    terminal.flush();
+    Blynk.notify("警告:正在发生重大电路故障事故，请相关人员立即前往直通520路口进行救援!");
+  flag = 0;
+  }
+  else if(flag && isERROR_1){
+    Serial.println("\n#################################################################");
+    Serial.println("警告：正在发生重大电路故障事故，请相关人员立即前往直通520路口进行救援！");
+    Serial.println("#################################################################");
+    Serial.printf("提示：此次故障疑似神秘能量操控！");
+    Serial.println("\n#################################################################\n");
+    terminal.println("###############################################");
+    terminal.flush();
+    terminal.println("Warning:Something unspeakable is happening!");
+    terminal.flush();
+    terminal.println("###############################################");
+    terminal.flush();
+    Blynk.notify("警告:正在发生重大电路故障事故，请相关人员立即前往直通520路口进行救援!");
   flag = 0;
   }
 }
@@ -160,41 +184,95 @@ BLYNK_WRITE(V0) {
   }
 }
 BLYNK_WRITE(V1) {
-  int buttonState = param.asInt();
-  isERROR = buttonState;
+  isERROR_1 = param.asInt();
+  if (isERROR_1){
+    m = random(0,9);  //从0-8随机生成一个数
+    LED.write8(ERRORCode[m]);
+    isERROR = true;
+  }
+  else  
+  {
+    isERROR = false;
+  }
+}
+BLYNK_WRITE(V2) {
+  isERROR_2 = param.asInt();
+  if (isERROR_2){
+  int n = random(0,8);
+  OFFLED = ~(0b00000001 << n);
+  }
+  else{
+    OFFLED = 0b11111111;
+    isERROR = false;
+  }
 }
 
 // 按键中断
-void onChange() {
-  isERROR = !isERROR;
+// 错误模式1：随机亮3盏灯
+void ERROR_1() {
+  isERROR_1 = !isERROR_1;
+  if (isERROR_1){
+    m = random(0,9);  //从0-8随机生成一个数
+    isERROR = true;
+  }
+  else   isERROR = false;
   while (!digitalRead(K1));
 }
-
-// 交通灯主函数
-void main_run() {
-  display.clear();  //清屏
-  if (!isERROR){
-    LED.write8(LEDCode[demoMode]);
-    demos[demoMode]();
-    flag = 1;
-    //动画组切换
-    if (millis() - timer > delayTime[demoMode]) {
-      demoMode = (demoMode + 1)  % demoLength;  
-      Serial.printf("now is: %s\n", str[demoMode]);
-      terminal.printf("now is: %s\n", str[demoMode]);
-      terminal.flush();
-      delay(10);
-      timer = millis();
-    }
+// 错误模式2：模拟现实，随机烂掉一盏灯，即8盏灯中，有一盏灯一直不亮
+void ERROR_2() {
+  isERROR_2 = !isERROR_2;
+  if (isERROR_2){
+  int n = random(0,8);
+  OFFLED = ~(0b00000001 << n);
   }
-  else {
-      ERROR();
-      delay(1000);
-    }
+  else{
+    OFFLED = 0b11111111;
+    isERROR = false;
+  }
+  while (!digitalRead(K2));
 }
 
+// 扫描函数
+int scan() {
+  badLED = -1;
+  if ((LEDCode[demoMode] & OFFLED) != LEDCode[demoMode]){
+    int n = (LEDCode[demoMode] & OFFLED) ^ LEDCode[demoMode];
+    while (n>=1){
+      badLED+=1;
+      n /= 2;
+    }
+  }
+  return badLED;
+}
 
 void loop() {
-  Blynk.run();
-  main_run();
+  while(true){
+    Blynk.run();
+    if (!isERROR){
+      display.clear();  //清屏
+      LED.write8(LEDCode[demoMode] & OFFLED);
+      isERROR = scan()!=-1?true:false;
+      if (isERROR) continue;
+      demos[demoMode]();
+      flag = 1;
+      //动画组切换
+      if (millis() - timer > delayTime[demoMode]) {
+        demoMode = (demoMode + 1)  % demoLength;  
+        Serial.printf("now is: %s\n", str[demoMode]);
+        terminal.printf("now is: %s\n", str[demoMode]);
+        terminal.flush();
+        delay(10);
+        timer = millis();
+        }
+    }
+    else if(isERROR_1){
+      ERROR();
+      LED.write8(ERRORCode[m]);
+      delay(50);
+    }
+    else { 
+      ERROR();
+      delay(50);
+    }
+  }
 }
