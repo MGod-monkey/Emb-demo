@@ -48,6 +48,16 @@ VScode+platformIO:
 4. 连线->编译->上传
 
 > **注：单片机以ESP32为主，若使用ESP8266，则需要修改配置文件和main中对应的引脚**
+> 
+> 需要修改的地方如下：
+> 
+> [env:esp12e]
+> 
+> platform = espressif8266
+> 
+> board = esp12e
+> 
+> framework = arduino
 
 Arduino:
 
